@@ -11,8 +11,9 @@ RUN apt-get update && apt-get install -y \
     libgcrypt20-dev \
     make \
     curl \
-    wget
-
+    wget \
+    gperf
+    
 RUN git clone --recursive https://github.com/tdlib/telegram-bot-api.git
 
 RUN mkdir -p telegram-bot-api/build
